@@ -64,3 +64,43 @@ rev = rev \* 10 + lastDigit;
 n /= 10;
 }
 return rev;
+
+# 3
+
+Problem Name: Palindrome Number
+
+Pattern: Reverse Number + Compare
+
+Key Idea:
+Reverse the number and compare with original
+
+Steps:
+
+1. If n < 0 → return false
+2. Store original number
+3. Reverse digits
+4. Compare original == reverse
+
+Mistakes I made:
+
+- Used Math.abs() → made negative numbers incorrect
+
+#4
+Problem: GCD of two numbers
+
+Pattern: Euclidean Algorithm
+
+Key Idea:
+Keep reducing problem using modulo
+
+Steps:
+
+1. While b != 0:
+   a, b = b, a % b
+2. Return a
+
+TC: O(log n)
+
+Mistakes:
+
+- Confusing order of a and b
